@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit" Version="8.2.5" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="8.2.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CoffeeBar\CoffeeBar.csproj" />
+      <ProjectReference Include="..\Waiter1\Waiter1.csproj" />
+      <ProjectReference Include="..\Waiter2\Waiter2.csproj" />
+      <ProjectReference Include="..\Waiter3\Waiter3.csproj" />
+      <ProjectReference Include="..\Waiter4\Waiter4.csproj" />
+    </ItemGroup>
+
+</Project>
